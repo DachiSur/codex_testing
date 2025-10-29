@@ -20,4 +20,7 @@ overlay = overlay.without_audio()
 background = background.fx(blackwhite)
 overlay = overlay.fx(blackwhite)
 final = CompositeVideoClip([background, overlay])
+
 final.write_videofile(output_path)
+
+# Addition for difference from main
